@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+
+    char choice;
+    srand(time(0));
+    printf("Welcome the the Dice Rolling !!!\n\n\n");
+    do{
+        int dice=(rand()%6)+1;
+        printf("you rolled number is %d\n\n",dice);
+        printf("Do you want to roll again? (Y/N)\n");
+        scanf(" %c",&choice);
+    }
+
+    while(choice=='Y'|| choice=='y');
+
+    printf("Thanks for playing the Dice rolling game!");
+    return 0;
+}
